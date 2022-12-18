@@ -1,4 +1,4 @@
-package com.company.pokedex;
+package com.example.Pokedex;
 
 public class App {
     public static void main(String[] args){

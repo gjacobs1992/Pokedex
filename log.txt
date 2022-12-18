@@ -1,0 +1,18 @@
+2022-12-17T22:39:28.183205 Successful GET
+2022-12-17T22:40:16.518041 Successful GETmewtwo
+2022-12-17T22:40:44.3762889 Successful GET 'mewtwo'
+2022-12-17T22:41:04.3436735 Not Found
+2022-12-17T22:41:41.1268929 Not Found
+2022-12-17T22:48:33.3925072 Not Found
+2022-12-17T22:51:30.4771162 Not Found
+2022-12-17T22:51:30.4771162 Cannot invoke "com.example.Pokedex.Pokemon.toString()" because "pokemon" is null
+2022-12-17T22:52:28.059778 Successful GET 'mewtwo'
+2022-12-17T22:53:38.0440674 Successful GET 'charizard'
+2022-12-17T22:58:35.3959438 Successful GET 'mewtwo'
+2022-12-17T23:00:28.7318842 Not Found
+2022-12-17T23:00:28.7318842 Cannot invoke "com.example.Pokedex.Pokemon.toString()" because "pokemon" is null
+2022-12-17T23:00:40.5992423 Successful GET 'mewtwo'
+2022-12-17T23:06:04.2650954 Successful GET 'mewtwo'
+2022-12-17T23:30:55.7964095 Successful GET 'mewtwo'
+2022-12-17T23:32:31.092735 Successful GET 'mewtwo'
+2022-12-17T23:32:59.5449784 Successful GET 'mewtwo'
