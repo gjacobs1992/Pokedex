@@ -28,7 +28,6 @@ public class Controller {
             pokeService.displayPokeTypes(types);
         }catch (NullPointerException e){
             Logger.log(e.getMessage());
-            System.out.println("Result was null. Please check your spelling.");
         }
     }
     private String capFirstChar(String str){

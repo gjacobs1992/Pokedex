@@ -7,6 +7,8 @@ import org.springframework.web.client.ResourceAccessException;
 import org.springframework.web.client.RestClientResponseException;
 import org.springframework.web.client.RestTemplate;
 import com.fasterxml.jackson.databind.ObjectMapper;
+
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
 import java.util.List;
@@ -18,9 +20,13 @@ public class PokeService {
             String API_BASE_URL = "https://pokeapi.co/api/v2/pokemon/";
             ObjectMapper mapper = new ObjectMapper();
             mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-            Pokemon pokemon = mapper.readValue(new URL(API_BASE_URL + name), Pokemon.class);
-
-        return pokemon.getTypes();
+            try{
+                Pokemon pokemon = mapper.readValue(new URL(API_BASE_URL + name), Pokemon.class);
+                return pokemon.getTypes();
+            }catch(FileNotFoundException e){
+                System.out.println("Pokemon not found. Please check your spelling.");
+            }
+        return null;
     }
     public void displayPokeTypes(List<Type> types){
         System.out.print("Type(s): ");
