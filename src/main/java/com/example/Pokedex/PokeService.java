@@ -29,9 +29,11 @@ public class PokeService {
         return null;
     }
     public void displayPokeTypes(List<Type> types){
+        Controller controller = new Controller();
+
         System.out.print("Type(s): ");
         for(Type type : types){
-            System.out.print(type.getType().getName().toUpperCase() + " ");
+            System.out.print(controller.capFirstChar(type.getType().getName().toString()) + " ");
         }
     }
     public Pokemon getPokemon(String name){

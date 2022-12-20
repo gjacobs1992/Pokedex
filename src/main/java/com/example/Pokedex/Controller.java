@@ -30,7 +30,7 @@ public class Controller {
             Logger.log(e.getMessage());
         }
     }
-    private String capFirstChar(String str){
+    public String capFirstChar(String str){
         return str.substring(0,1).toUpperCase() + str.substring(1);
     }
 }
